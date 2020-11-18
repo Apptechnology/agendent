@@ -6,10 +6,10 @@
         <div class="card-header border-0">
           <div class="row align-items-center">
             <div class="col">
-              <h3 class="mb-0">Nuevo Médico</h3>
+              <h3 class="mb-0">Nuevo Paciente</h3>
             </div>
             <div class="col text-right">
-            <a href="{{ url('doctors')}}" class="btn btn-sm btn-default">Cancelar y volver</a>
+            <a href="{{ url('patients')}}" class="btn btn-sm btn-default">Cancelar y volver</a>
             </div>
           </div>
         </div>
@@ -26,10 +26,10 @@
 
             @endif
 
-        <form action="{{ url('doctors')}}" method="POST">
+        <form action="{{ url('patients')}}" method="POST">
             @csrf
     <div class="form-group">
-      <label for="name">Nombre del médico</label>
+      <label for="name">Nombre del paciente</label>
     <input type="text" name="name" class="form-control" value="{{ old('name')}}" required>
     </div>
 
